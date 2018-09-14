@@ -27,6 +27,7 @@ class Auth extends Component {
         axios.post('/api/auth/register', {username, password}).then(res=>
         console.log(res.data))
     }
+    //was able to get where I could see the array from my database, but wasn't sure where to go towards getting the one current showing.  My guess was get_users select * from users where username=$1 and password=$2, but for some reason I think it had to do with my componentdid mount that is not existant right now... also, I think it may be because my brain isn't functioning quite right.
 
     render() {
         console.log('user', this.state.username)
